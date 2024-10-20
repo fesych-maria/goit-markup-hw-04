@@ -336,7 +336,7 @@ img {
 }
 
 .members-item:hover .soc-icon-link,
-.members-item:focus .soc-icon-link {
+.soc-icon-link:hover {
   background-color: #404bbf;
 }
 
