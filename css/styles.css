@@ -107,6 +107,8 @@ img {
   border-bottom: 1px solid #e7e9fc;
   max-width: 1440px;
   margin: 0 auto;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -253,8 +255,7 @@ img {
   height: 56px;
   display: block;
   margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -276,6 +277,10 @@ img {
   background: #f4f4fd;
   padding: 24px 100px;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
 }
 .features-list {
   display: flex;
@@ -311,7 +316,7 @@ img {
 }
 
 .members-container {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .members-image {
 }
@@ -326,10 +331,12 @@ img {
 
 .members-icon-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
-.members-item:hover .soc-icon-link {
+.members-item:hover .soc-icon-link,
+.members-item:focus .soc-icon-link {
   background-color: #404bbf;
 }
 
@@ -371,7 +378,7 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   background-color: #4d5ae5;
-  padding: 40px 32px 0;
+  padding: 40px 32px;
   top: 0;
   left: 0;
   width: 100%;
@@ -434,12 +441,14 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-description-container {
   margin-right: 120px;
 }
 
-.footer-icon-item .soc-icon-link:hover {
+.footer-icon-item .soc-icon-link:hover,
+.footer-icon-item .soc-icon-link:focus {
   background-color: #31d0aa;
 }
